@@ -181,14 +181,22 @@ SidebarMenuItem.displayName = "SidebarMenuItem"
 
 const SidebarMenuButton = React.forwardRef<
   HTMLButtonElement,
-  React.ButtonHTMLAttributes<HTMLButtonElement> & { active?: boolean }
->(({ className, active, ...props }, ref) => {
+  React.ButtonHTMLAttributes<HTMLButtonElement> & { 
+    active?: boolean;
+    asChild?: boolean;
+    isActive?: boolean;
+    tooltip?: string;
+  }
+>(({ className, active, isActive, ...props }, ref) => {
+  // Use either active or isActive prop
+  const isButtonActive = active || isActive;
+  
   return (
     <button
       ref={ref}
       className={cn(
         "w-full text-left flex items-center rounded-md px-2 py-1.5 text-sm font-medium hover:bg-accent hover:text-accent-foreground",
-        active && "bg-accent text-accent-foreground",
+        isButtonActive && "bg-accent text-accent-foreground",
         className
       )}
       {...props}
