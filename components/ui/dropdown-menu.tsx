@@ -31,13 +31,20 @@ DropdownMenuTrigger.displayName = "DropdownMenuTrigger"
 
 const DropdownMenuContent = React.forwardRef<
   HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
->(({ className, ...props }, ref) => {
+  React.HTMLAttributes<HTMLDivElement> & { align?: "start" | "end" | "center" }
+>(({ className, align = "center", ...props }, ref) => {
+  const alignClasses = {
+    start: "origin-top-left left-0",
+    center: "origin-top",
+    end: "origin-top-right right-0"
+  };
+
   return (
     <div
       ref={ref}
       className={cn(
-        "absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-popover shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none",
+        "absolute z-10 mt-2 w-56 rounded-md bg-popover shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none",
+        alignClasses[align],
         className
       )}
       {...props}
