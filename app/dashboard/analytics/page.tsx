@@ -16,7 +16,7 @@ export default function AnalyticsPage() {
         <div className="flex flex-col gap-2 sm:flex-row">
           <Select defaultValue="30days">
             <SelectTrigger className="w-[180px]">
-              <SelectValue placeholder="Select period" />
+              <SelectValue>Select period</SelectValue>
             </SelectTrigger>
             <SelectContent>
               <SelectItem value="7days">Last 7 days</SelectItem>
