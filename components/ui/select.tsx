@@ -76,7 +76,7 @@ SelectContent.displayName = "SelectContent"
 
 const SelectItem = React.forwardRef<
   HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
+  React.HTMLAttributes<HTMLDivElement> & { value?: string }
 >(({ className, children, ...props }, ref) => {
   return (
     <div
