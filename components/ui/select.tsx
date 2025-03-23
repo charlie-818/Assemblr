@@ -43,7 +43,7 @@ SelectTrigger.displayName = "SelectTrigger"
 
 const SelectValue = React.forwardRef<
   HTMLSpanElement,
-  React.HTMLAttributes<HTMLSpanElement> & { placeholder?: string }
+  React.HTMLAttributes<HTMLSpanElement>
 >(({ className, ...props }, ref) => {
   return (
     <span
