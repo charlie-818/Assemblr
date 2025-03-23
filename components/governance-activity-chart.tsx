@@ -12,13 +12,17 @@ import {
   Legend,
   Filler,
   ArcElement,
+  ChartData,
+  ChartOptions,
 } from "chart.js"
 import { Doughnut } from "react-chartjs-2"
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler, ArcElement)
 
+type ChartDataType = ChartData<'doughnut', number[], string>;
+
 export function GovernanceActivityChart() {
-  const [chartData, setChartData] = useState({
+  const [chartData, setChartData] = useState<ChartDataType>({
     labels: [],
     datasets: [],
   })
@@ -51,7 +55,7 @@ export function GovernanceActivityChart() {
     })
   }, [])
 
-  const options = {
+  const options: ChartOptions<'doughnut'> = {
     responsive: true,
     maintainAspectRatio: false,
     plugins: {
