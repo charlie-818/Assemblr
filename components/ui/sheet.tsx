@@ -17,7 +17,7 @@ Sheet.displayName = "Sheet"
 
 const SheetTrigger = React.forwardRef<
   HTMLButtonElement,
-  React.ButtonHTMLAttributes<HTMLButtonElement>
+  React.ButtonHTMLAttributes<HTMLButtonElement> & { asChild?: boolean }
 >(({ className, ...props }, ref) => (
   <button
     ref={ref}
