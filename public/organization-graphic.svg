@@ -1,0 +1,79 @@
+<svg width="550" height="550" viewBox="0 0 550 550" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background elements -->
+  <circle cx="275" cy="275" r="250" fill="#F8F9FC" />
+  <circle cx="275" cy="275" r="200" fill="#F0F4FF" stroke="#E2E8F0" stroke-width="1" />
+  
+  <!-- Central node -->
+  <circle cx="275" cy="275" r="50" fill="#4F46E5" />
+  <circle cx="275" cy="275" r="45" fill="#4338CA" />
+  <path d="M260 275C260 266.716 266.716 260 275 260C283.284 260 290 266.716 290 275C290 283.284 283.284 290 275 290C266.716 290 260 283.284 260 275Z" fill="white" />
+  
+  <!-- Connecting lines -->
+  <line x1="275" y1="225" x2="275" y2="175" stroke="#4F46E5" stroke-width="3" />
+  <line x1="275" y1="325" x2="275" y2="375" stroke="#4F46E5" stroke-width="3" />
+  <line x1="325" y1="275" x2="375" y2="275" stroke="#4F46E5" stroke-width="3" />
+  <line x1="225" y1="275" x2="175" y2="275" stroke="#4F46E5" stroke-width="3" />
+  
+  <line x1="315" y1="235" x2="350" y2="200" stroke="#4F46E5" stroke-width="3" />
+  <line x1="315" y1="315" x2="350" y2="350" stroke="#4F46E5" stroke-width="3" />
+  <line x1="235" y1="315" x2="200" y2="350" stroke="#4F46E5" stroke-width="3" />
+  <line x1="235" y1="235" x2="200" y2="200" stroke="#4F46E5" stroke-width="3" />
+  
+  <!-- Outer nodes -->
+  <!-- Top -->
+  <circle cx="275" cy="175" r="25" fill="#3B82F6" />
+  <circle cx="275" cy="175" r="20" fill="#2563EB" />
+  <path d="M267.5 175C267.5 170.858 270.858 167.5 275 167.5C279.142 167.5 282.5 170  />
+  <path d="M267.5 175C267.5 170.858 270.858 167.5 275 167.5C279.142 167.5 282.5 170.858 282.5 175C282.5 179.142 279.142 182.5 275 182.5C270.858 182.5 267.5 179.142 267.5 175Z" fill="white" />
+  
+  <!-- Right -->
+  <circle cx="375" cy="275" r="25" fill="#3B82F6" />
+  <circle cx="375" cy="275" r="20" fill="#2563EB" />
+  <path d="M367.5 275C367.5 270.858 370.858 267.5 375 267.5C379.142 267.5 382.5 270.858 382.5 275C382.5 279.142 379.142 282.5 375 282.5C370.858 282.5 367.5 279.142 367.5 275Z" fill="white" />
+  
+  <!-- Bottom -->
+  <circle cx="275" cy="375" r="25" fill="#3B82F6" />
+  <circle cx="275" cy="375" r="20" fill="#2563EB" />
+  <path d="M267.5 375C267.5 370.858 270.858 367.5 275 367.5C279.142 367.5 282.5 370.858 282.5 375C282.5 379.142 279.142 382.5 275 382.5C270.858 382.5 267.5 379.142 267.5 375Z" fill="white" />
+  
+  <!-- Left -->
+  <circle cx="175" cy="275" r="25" fill="#3B82F6" />
+  <circle cx="175" cy="275" r="20" fill="#2563EB" />
+  <path d="M167.5 275C167.5 270.858 170.858 267.5 175 267.5C179.142 267.5 182.5 270.858 182.5 275C182.5 279.142 179.142 282.5 175 282.5C170.858 282.5 167.5 279.142 167.5 275Z" fill="white" />
+  
+  <!-- Diagonal nodes -->
+  <!-- Top-Right -->
+  <circle cx="350" cy="200" r="25" fill="#3B82F6" />
+  <circle cx="350" cy="200" r="20" fill="#2563EB" />
+  <path d="M342.5 200C342.5 195.858 345.858 192.5 350 192.5C354.142 192.5 357.5 195.858 357.5 200C357.5 204.142 354.142 207.5 350 207.5C345.858 207.5 342.5 204.142 342.5 200Z" fill="white" />
+  
+  <!-- Bottom-Right -->
+  <circle cx="350" cy="350" r="25" fill="#3B82F6" />
+  <circle cx="350" cy="350" r="20" fill="#2563EB" />
+  <path d="M342.5 350C342.5 345.858 345.858 342.5 350 342.5C354.142 342.5 357.5 345.858 357.5 350C357.5 354.142 354.142 357.5 350 357.5C345.858 357.5 342.5 354.142 342.5 350Z" fill="white" />
+  
+  <!-- Bottom-Left -->
+  <circle cx="200" cy="350" r="25" fill="#3B82F6" />
+  <circle cx="200" cy="350" r="20" fill="#2563EB" />
+  <path d="M192.5 350C192.5 345.858 195.858 342.5 200 342.5C204.142 342.5 207.5 345.858 207.5 350C207.5 354.142 204.142 357.5 200 357.5C195.858 357.5 192.5 354.142 192.5 350Z" fill="white" />
+  
+  <!-- Top-Left -->
+  <circle cx="200" cy="200" r="25" fill="#3B82F6" />
+  <circle cx="200" cy="200" r="20" fill="#2563EB" />
+  <path d="M192.5 200C192.5 195.858 195.858 192.5 200 192.5C204.142 192.5 207.5 195.858 207.5 200C207.5 204.142 204.142 207.5 200 207.5C195.858 207.5 192.5 204.142 192.5 200Z" fill="white" />
+  
+  <!-- Decorative elements -->
+  <circle cx="275" cy="275" r="150" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="5 5" />
+  <circle cx="275" cy="275" r="100" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="5 5" />
+  
+  <!-- Small connecting nodes -->
+  <circle cx="275" cy="225" r="5" fill="#4F46E5" />
+  <circle cx="275" cy="325" r="5" fill="#4F46E5" />
+  <circle cx="225" cy="275" r="5" fill="#4F46E5" />
+  <circle cx="325" cy="275" r="5" fill="#4F46E5" />
+  <circle cx="315" cy="235" r="5" fill="#4F46E5" />
+  <circle cx="315" cy="315" r="5" fill="#4F46E5" />
+  <circle cx="235" cy="315" r="5" fill="#4F46E5" />
+  <circle cx="235" cy="235" r="5" fill="#4F46E5" />
+</svg>
+
