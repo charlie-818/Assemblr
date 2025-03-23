@@ -63,6 +63,23 @@ const DropdownMenuItem = React.forwardRef<
 })
 DropdownMenuItem.displayName = "DropdownMenuItem"
 
+const DropdownMenuLabel = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => {
+  return (
+    <div
+      ref={ref}
+      className={cn(
+        "px-4 py-2 text-sm font-semibold text-foreground",
+        className
+      )}
+      {...props}
+    />
+  )
+})
+DropdownMenuLabel.displayName = "DropdownMenuLabel"
+
 const DropdownMenuSeparator = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
@@ -82,5 +99,6 @@ export {
   DropdownMenuTrigger,
   DropdownMenuContent,
   DropdownMenuItem,
+  DropdownMenuLabel,
   DropdownMenuSeparator,
 } 
