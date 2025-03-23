@@ -3,7 +3,10 @@ import { cn } from "@/lib/utils"
 
 const Tabs = React.forwardRef<
   HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
+  React.HTMLAttributes<HTMLDivElement> & { 
+    defaultValue?: string;
+    onValueChange?: (value: string) => void;
+  }
 >(({ className, ...props }, ref) => {
   return (
     <div
