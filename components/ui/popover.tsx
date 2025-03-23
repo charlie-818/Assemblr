@@ -17,7 +17,7 @@ Popover.displayName = "Popover"
 
 const PopoverTrigger = React.forwardRef<
   HTMLButtonElement,
-  React.ButtonHTMLAttributes<HTMLButtonElement>
+  React.ButtonHTMLAttributes<HTMLButtonElement> & { asChild?: boolean }
 >(({ className, ...props }, ref) => {
   return (
     <button
