@@ -1,7 +1,6 @@
-import type React from "react"
+import React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import localFont from "next/font/local"
+import { Inter, Poppins, JetBrains_Mono } from "next/font/google"
 
 import "./globals.css"
 
@@ -12,30 +11,15 @@ const inter = Inter({
   variable: "--font-inter",
 })
 
-const cabinetGrotesk = localFont({
-  src: [
-    {
-      path: "../public/fonts/CabinetGrotesk-Regular.woff2",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/CabinetGrotesk-Medium.woff2",
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/CabinetGrotesk-Bold.woff2",
-      weight: "700",
-      style: "normal",
-    },
-  ],
+const cabinetGrotesk = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
   display: "swap",
   variable: "--font-cabinet-grotesk",
 })
 
-const jetbrainsMono = localFont({
-  src: "../public/fonts/JetBrainsMono-Regular.woff2",
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
   display: "swap",
   variable: "--font-jetbrains-mono",
 })
