@@ -1,10 +1,15 @@
 import * as React from "react"
 import { cn } from "@/lib/utils"
 
-interface CalendarProps extends React.HTMLAttributes<HTMLDivElement> {}
+interface CalendarProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 'onSelect'> {
+  mode?: "single" | "range" | "multiple";
+  selected?: Date | Date[] | undefined;
+  onSelect?: (date: Date | undefined) => void;
+  initialFocus?: boolean;
+}
 
 const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
-  ({ className, ...props }, ref) => {
+  ({ className, mode = "single", selected, onSelect, initialFocus, ...props }, ref) => {
     return (
       <div
         ref={ref}
