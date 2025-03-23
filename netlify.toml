@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build || true"
+  command = "npm run build"
   publish = ".next"
   ignore = "false"
 
@@ -13,7 +13,7 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-# This redirect is no longer needed with the Next.js plugin
+# The following redirects are not needed with the Next.js plugin and can be removed
 # [[redirects]]
 #   from = "/*"
 #   to = "/index.html"
